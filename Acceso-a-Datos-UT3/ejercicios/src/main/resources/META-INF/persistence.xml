@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence 
+        https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd" 
+    version="3.2"> 
+    <persistence-unit name="gamergy" transaction-type="RESOURCE_LOCAL"> 
+        <class>ut3.ejercicios.ejercicio1.entidades.Videojuego</class>
+        <class>ut3.ejercicios.ejercicio1.entidades.Torneo</class>
+        <class>ut3.ejercicios.ejercicio1.entidades.Jugador</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes> 
+        <properties> 
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/> 
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://192.168.29.12:10363/ad"/> 
+            <property name="jakarta.persistence.jdbc.user" value="dam86"/> 
+            <property name="jakarta.persistence.jdbc.password" value="20999936Q"/> 
+
+            <property name="jakarta.persistence.create-database-schemas" value="true" /> 
+            
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <property name="hibernate.show_sql" value="false"/> 
+            <property name="hibernate.format_sql" value="true"/> 
+        </properties> 
+    </persistence-unit>
+
+        <persistence-unit name="inmobiliaria" transaction-type="RESOURCE_LOCAL"> 
+        <class>ut3.ejercicios.ejercicio2.entidades.</class>
+        <class>ut3.ejercicios.ejercicio2.entidades.</class>
+        <class>ut3.ejercicios.ejercicio2.entidades.</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes> 
+        <properties> 
+
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/> 
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://192.168.29.12:10363/ad"/> 
+            <property name="jakarta.persistence.jdbc.user" value="dam86"/> 
+            <property name="jakarta.persistence.jdbc.password" value="20999936Q"/> 
+
+            <property name="jakarta.persistence.create-database-schemas" value="true" /> 
+            
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="false"/> 
+            <property name="hibernate.format_sql" value="true"/> 
+        </properties> 
+    </persistence-unit>  
+</persistence> 
